@@ -12,6 +12,7 @@
 *       to run: 
 *       node install
 *       node index.js (optional)FileName 
+*       jest testing - run `npm run test` in your terminal
 *
 * AUTHOR :    Lee Peterson    START DATE : 2020-01-22
 *
@@ -493,7 +494,6 @@ const removeBook = async () => {
                 if (booksArray.length > (bookIdSelection - 1)) {
 
                     // Delete book at bookItemId
-                    // booksArray.splice((bookIdSelection - 1), 1);
                     booksArray.removeItem(bookIdSelection - 1);
 
                     booksArray.forEach((item, index) => {
